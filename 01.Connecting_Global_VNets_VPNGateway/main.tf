@@ -228,7 +228,7 @@ resource "azurerm_linux_virtual_machine" "vm04" {
   size                            = "Standard_B2s"
   disable_password_authentication = false
   admin_username                  = "vmadmin"
-  admin_password                  = "P@ssword.123"
+  admin_password                  = "xxxxxx"
   network_interface_ids           = [
               azurerm_network_interface.vm04-nic01.id,
             ]
@@ -252,7 +252,7 @@ resource "azurerm_linux_virtual_machine" "vm05" {
   size                            = "Standard_B2s"
   disable_password_authentication = false
   admin_username                  = "vmadmin"
-  admin_password                  = "P@ssword.123"
+  admin_password                  = "xxxxxx"
   network_interface_ids           = [
               azurerm_network_interface.vm05-nic01.id,
             ]
@@ -276,7 +276,7 @@ resource "azurerm_linux_virtual_machine" "vm06" {
   size                            = "Standard_B2s"
   disable_password_authentication = false
   admin_username                  = "vmadmin"
-  admin_password                  = "P@ssword.123"
+  admin_password                  = "xxxxxx"
   network_interface_ids           = [
               azurerm_network_interface.vm06-nic01.id,
             ]
@@ -386,7 +386,7 @@ resource "azurerm_virtual_network_gateway_connection" "conn_eastus2_centralus" {
   virtual_network_gateway_id      = azurerm_virtual_network_gateway.vng-vnet04.id
   peer_virtual_network_gateway_id = azurerm_virtual_network_gateway.vng-vnet05.id
 
-  shared_key = "4-5h4r3d-k3y"
+  shared_key = "xxxxxx"
 }
 resource "azurerm_virtual_network_gateway_connection" "conn_centralus_eastus2" {
   name                = "conn_centralus_eastus2"
@@ -397,7 +397,7 @@ resource "azurerm_virtual_network_gateway_connection" "conn_centralus_eastus2" {
   virtual_network_gateway_id      = azurerm_virtual_network_gateway.vng-vnet05.id
   peer_virtual_network_gateway_id = azurerm_virtual_network_gateway.vng-vnet04.id
 
-  shared_key = "4-5h4r3d-k3y"
+  shared_key = "xxxxxx"
 }
 resource "azurerm_virtual_network_gateway_connection" "conn_westus2_centralus" {
   name                = "conn_westus2_centralus"
@@ -408,7 +408,7 @@ resource "azurerm_virtual_network_gateway_connection" "conn_westus2_centralus" {
   virtual_network_gateway_id      = azurerm_virtual_network_gateway.vng-vnet06.id
   peer_virtual_network_gateway_id = azurerm_virtual_network_gateway.vng-vnet05.id
 
-  shared_key = "4-5h4r3d-k3y"
+  shared_key = "xxxxxx"
 }
 resource "azurerm_virtual_network_gateway_connection" "conn_centralus_westus2" {
   name                = "conn_centralus_westus2"
@@ -419,7 +419,7 @@ resource "azurerm_virtual_network_gateway_connection" "conn_centralus_westus2" {
   virtual_network_gateway_id      = azurerm_virtual_network_gateway.vng-vnet05.id
   peer_virtual_network_gateway_id = azurerm_virtual_network_gateway.vng-vnet06.id
 
-  shared_key = "4-5h4r3d-k3y"
+  shared_key = "xxxxxx"
 }
 
 # ---------------------- Outputs ----------------------

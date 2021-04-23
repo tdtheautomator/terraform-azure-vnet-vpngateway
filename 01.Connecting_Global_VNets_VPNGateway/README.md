@@ -1,4 +1,5 @@
 # VNet-to-Vnet connection via VPN Gateway
+This plan is used to deploy 3 VNets in seperate locations and connect them via VPN Gateways.
 ## What Does this plan do ?
 A total of 40 resources are created.
 
